@@ -1,0 +1,25 @@
+Disassembly Listing for Atividade1
+Generated From:
+C:/Users/beatr/OneDrive/Área de Trabalho/computação/2021.3/microcontroladores/Atividade1.X/Atividade1.X/dist/default/debug/Atividade1.X.debug.cof
+17/09/2021 21:05:52
+
+---  C:/Users/beatr/OneDrive/?rea de Trabalho/computa??o/2021.3/microcontroladores/Atividade1.X/Atividade1.X/atividade1.asm
+0002  6A93     CLRF TRISB, ACCESS
+0004  6B81     CLRF 0x81, BANKED
+0006  6B83     CLRF 0x83, BANKED
+0008  6A81     CLRF PORTB, ACCESS
+000A  6B60     CLRF Delay1, BANKED
+000C  6B61     CLRF Delay2, BANKED
+000E  0E0F     MOVLW 0xF
+0010  6E81     MOVWF PORTB, ACCESS
+0012  7081     BTG PORTB, 0, ACCESS
+0014  7E83     BTG PORTD, 7, ACCESS
+0016  7E81     BTG PORTB, 7, ACCESS
+0018  2F60     DECFSZ Delay1, F, BANKED
+001A  EF0C     GOTO 0x18
+001C  F000     NOP
+001E  2F61     DECFSZ Delay2, F, BANKED
+0020  EF0C     GOTO 0x18
+0022  F000     NOP
+0024  EF09     GOTO 0x12
+0026  F000     NOP

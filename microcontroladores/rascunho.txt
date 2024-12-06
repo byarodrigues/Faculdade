@@ -1,0 +1,21 @@
+PIC            		
+clock = 2Mhz     	= 1/8Mhz = 0,125us
+processador = 1:128	= 64 * 0,5us = 32us
+tempo = ?		= 4 * 0,125us = 0,5us
+iniciado em 49		= 256 - 39 = 217 = 39*32us = 1,248ms
+
+= 0,5us
+= 4 * 0,5 = 2 us
+= 128 * 2us = 256us
+= 256-49 = 207 = 49*256 = 9984ms
+
+
+clock = 8Mhz     	
+processador = 1:256	
+tempo = ?		
+iniciado em 36	
+
+= 0,125us
+= 4 * 0,125 = 32us
+= 256 * 32 = 8192us
+8192-36 = 8156*36 = 293616ms
