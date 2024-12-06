@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1700421809 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\src\serialchar.cpp
+	"serialChar.h"
+
+1700421792 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\serialchar.h
+	"serializable.h"
+
+1700163270 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\serializable.h
+	<string>
+
+1700257247 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\src\headers.cpp
+	"Headers.h"
+
+1700162655 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\headers.h
+	"serializable.h"
+
+1701308026 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\src\header.cpp
+
+1701308020 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\src\serialchar.cpp
+
+1701314089 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\main.cpp
+	<iostream>
+	"mbtree.h"
+
+1701540811 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\include\mbtree.h
+	<iostream>
+	<vector>
+	<string>
+	<sstream>
+	"node.h"
+
+1701540386 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\include\node.h
+	<iostream>
+	<vector>
+

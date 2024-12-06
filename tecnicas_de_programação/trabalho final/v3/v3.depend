@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1700421809 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\src\serialchar.cpp
+	"serialChar.h"
+
+1700421792 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\serialchar.h
+	"serializable.h"
+
+1700163270 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\serializable.h
+	<string>
+
+1700257247 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\src\headers.cpp
+	"Headers.h"
+
+1700162655 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\headers.h
+	"serializable.h"
+
+1701308026 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\src\header.cpp
+
+1701308020 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\src\serialchar.cpp
+
+1701314089 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\main.cpp
+	<iostream>
+	"mbtree.h"
+
+1701540811 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\include\mbtree.h
+	<iostream>
+	<vector>
+	<string>
+	<sstream>
+	"node.h"
+
+1701540386 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v2\include\node.h
+	<iostream>
+	<vector>
+
+1702330359 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\src\header.cpp
+	"header.h"
+	<sstream>
+
+1702330747 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\include\header.h
+	"serializable.h"
+	<string>
+
+1702330531 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\include\serializable.h
+	<iostream>
+	<string>
+
+1702330518 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\src\serialchar.cpp
+	"serialChar.h"
+
+1702330476 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\include\serialchar.h
+	"serializable.h"
+	<iostream>
+
+1702385174 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\main.cpp
+	<iostream>
+	"mbtree.h"
+	"btree_node.h"
+	"typedfile.h"
+
+1702387210 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\include\mbtree.h
+	<iostream>
+	<vector>
+	<string>
+	<sstream>
+	<fstream>
+	"btree_node.h"
+	"serializable.h"
+
+1702383213 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\include\btree_node.h
+	<iostream>
+	<vector>
+	"serializable.h"
+
+1702387397 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\include\typedfile.h
+	"header.h"
+	"record.h"
+	"serializable.h"
+	<string>
+	<fstream>
+	<type_traits>
+	"btree_node.h"
+
+1702335594 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\v3\include\record.h
+	<string>
+	"serializable.h"
+	<type_traits>
+	<iostream>
+

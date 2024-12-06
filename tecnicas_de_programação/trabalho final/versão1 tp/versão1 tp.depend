@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1700421809 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\src\serialchar.cpp
+	"serialChar.h"
+
+1700421792 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\serialchar.h
+	"serializable.h"
+
+1700163270 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\serializable.h
+	<string>
+
+1700257247 source:c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\src\headers.cpp
+	"Headers.h"
+
+1700162655 c:\users\bya\desktop\computação\2023.2\tp\trabalho final\versão1 tp\include\headers.h
+	"serializable.h"
+

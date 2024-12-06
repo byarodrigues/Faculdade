@@ -1,0 +1,184 @@
+Trabalho - Árvore B
+1 Descrição
+O objetivo deste trabalho é implementar um pequeno programa em 
+C++, usando um projeto no Code::Blocks. O trabalho deve ser 
+desenvolvido de acordo com a Seção 2.
+
+O trabalho vale 20 (vinte) pontos da média final. A realização 
+é em dupla.
+
+Trabalhos que não compilam não possuem condições de avaliação e 
+valem automaticamente 0 (zero). Também serão anulados trabalhos 
+cuja cópia da internet for comprovada em qualquer momento, bem
+como cópia de trabalhos de outros alunos (sendo anuladas todas 
+as cópias).
+
+A compilação e os testes serão efetuados em Linux, portanto, é 
+altamente recomendável que o trabalho seja testado, pelo menos 
+uma vez, nessa plataforma.
+
+Além dos testes de caixa preta (resolução do problema), serão 
+avaliados no teste de caixa clara:
+
+clareza e corretude do código;
+conformidade às especificações;
+comentários e endentação correta;
+correta aplicação dos conceitos de POO.
+Os trabalhos devem ser entregues de acordo com as instruções da 
+Seção 3.
+
+2 Especificação
+A meta da implementação é a construção do programa seguindo os 
+seguintes critérios:
+
+O programa deve ser corretamente modularizado (dividido em 
+classes, métodos, etc.);
+O projeto deve ser criado da seguinte forma: 
+ArvoreB-NomeAluno1-NomeAluno2, 
+sem espaços, acentos ou caracteres especiais, por exemplo, 
+ArvoreB-ChicoAnisio-JoSoares.
+No cabeçalho de todos arquivos, deve constar um comentário com 
+a identificação completa dos alunos, incluindo números de 
+matrícula.
+Ao término do trabalho, cada aluno deverá:
+Selecionar a opção Clean do menu Build, no Code::Blocks;
+Compactar a pasta do projeto com todo seu conteúdo, usando o 
+mesmo nome da pasta como nome do arquivo (ex.: 
+ArvoreB-NomeAluno1-NomeAluno2.zip)
+
+A árvore B em disco é um arquivo tipado em que cada página é 
+armazenada como um registro do arquivo. Deve ser implementado 
+um programa que armazene um conjunto de objetos do TAD 
+(tipo abstrato de dados) serialChar em uma árvore B, com o 
+armazenamento de cada página da árvore em um registro de 
+arquivo tipado, conforme visto na disciplina. A árvore de ter 
+um grau mínimo t = 3, especificado na forma de uma constante 
+no cabeçalho da classe.
+
+O tipo serialChar é um tipo de dados serializável, com todos os 
+operadores relacionais implementados, para correto uso como 
+chave de uma árvore. 
+Seu conteúdo é um caracter. O operador << deve escrever o valor 
+armazenado no objeto. A leitura com o operador >> poderá se 
+feita de forma direta para valores.O tipo é case sensitive, 
+ou seja, 'A' e 'a' são caracteres diferentes. Também são válidos 
+dígitos e caracteres especiais 
+('!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/',
+ ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', 
+'}', '~'). A ordenação considera a sequência na tabela ASCII.
+
+A implementação deve manter o menor número possível de páginas 
+em memória. A classe header poderá ser alterada, para indicar 
+a raiz da árvore, se for necessário. Cada página da árvore será 
+armazenada em um único registro do arquivo.
+
+O programa deve apresentar um menu que permita ao usuário:
+
+inserir um valor na árvore;
+remover um valor da árvore;
+imprimir a árvore completa;
+buscar um valor em uma árvore;
+executar um conjunto de testes padronizados;
+o menu deve ser reapresentado após cada ação, exceto quando o 
+usuário solicitar o término da execução.
+O conjunto padronizado de testes corresponde à inserção, em 
+ordem, das chaves ['u', '<', 'd', 'e', 'i', '{', '!', 'X', '.',
+ '4', 'r', 'J', '#', 'B', '7', 'x', ',', '?', '9', ';', 'Q', 
+'8', 'I', 'P', 'C']. Após inseri-las, devem ser removidas, em 
+ordem, as chaves ['4', 'r', '#', ',', 'i', '<', 'e', '8', '9', 
+'C', '!', 'P']. Cada inserção/remoção deverá imprimir o estado 
+atual da árvore ao terminar.
+
+Durante a inserção e a remoção, deve ocorrer uma única passada 
+na árvore, da raiz até a página em que a operação for realizada. 
+No caso da remoção, a busca pelo maior predecessor ou pelo menor 
+sucessor deve ser feita com uma única passada, já removendo e 
+ajustando a árvore para que a remoção seja concluída.
+
+3 Prazo de Entrega
+Os trabalhos devem ser entregues, impreterivelmente, até a data 
+estipulada abaixo, através do upload dos arquivos através do 
+Moodle. Serão aceitos trabalhos até às 23:59h dessa data. 
+Após 23:59h, a nota do aluno é automaticamente zero e o envio 
+de arquivos será suspenso.
+
+Sob nenhuma hipótese serão aceitos trabalhos enviados por e-mail, 
+mídia removível ou impressos. Serão avaliados apenas os arquivos 
+enviados através do portal, dentro do prazo estipulado.
+
+
+
+
+
+
+
+
+
+
+Trabalho - Árvore B
+1 Descrição
+O objetivo deste trabalho é implementar um pequeno programa em 
+C++, usando um projeto no Code::Blocks. O trabalho deve ser 
+desenvolvido de acordo com a Seção 2.
+2 Especificação
+A meta da implementação é a construção do programa seguindo os 
+seguintes critérios:
+
+O programa deve ser corretamente modularizado (dividido em 
+classes, métodos, etc.);
+A árvore B em disco é um arquivo tipado em que cada página é 
+armazenada como um registro do arquivo. Deve ser implementado 
+um programa que armazene um conjunto de objetos do TAD 
+(tipo abstrato de dados) serialChar em uma árvore B, com o 
+armazenamento de cada página da árvore em um registro de 
+arquivo tipado, conforme visto na disciplina. A árvore de ter 
+um grau mínimo t = 3, especificado na forma de uma constante 
+no cabeçalho da classe.
+
+O tipo serialChar é um tipo de dados serializável, com todos os 
+operadores relacionais implementados, para correto uso como 
+chave de uma árvore. 
+Seu conteúdo é um caracter. O operador << deve escrever o valor 
+armazenado no objeto. A leitura com o operador >> poderá se 
+feita de forma direta para valores.O tipo é case sensitive, 
+ou seja, 'A' e 'a' são caracteres diferentes. Também são válidos 
+dígitos e caracteres especiais 
+('!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/',
+ ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', 
+'}', '~'). A ordenação considera a sequência na tabela ASCII.
+
+A implementação deve manter o menor número possível de páginas 
+em memória. A classe header poderá ser alterada, para indicar 
+a raiz da árvore, se for necessário. Cada página da árvore será 
+armazenada em um único registro do arquivo.
+
+O programa deve apresentar um menu que permita ao usuário:
+
+inserir um valor na árvore;
+remover um valor da árvore;
+imprimir a árvore completa;
+buscar um valor em uma árvore;
+executar um conjunto de testes padronizados;
+o menu deve ser reapresentado após cada ação, exceto quando o 
+usuário solicitar o término da execução.
+O conjunto padronizado de testes corresponde à inserção, em 
+ordem, das chaves ['u', '<', 'd', 'e', 'i', '{', '!', 'X', '.',
+ '4', 'r', 'J', '#', 'B', '7', 'x', ',', '?', '9', ';', 'Q', 
+'8', 'I', 'P', 'C']. Após inseri-las, devem ser removidas, em 
+ordem, as chaves ['4', 'r', '#', ',', 'i', '<', 'e', '8', '9', 
+'C', '!', 'P']. Cada inserção/remoção deverá imprimir o estado 
+atual da árvore ao terminar.
+
+Durante a inserção e a remoção, deve ocorrer uma única passada 
+na árvore, da raiz até a página em que a operação for realizada. 
+No caso da remoção, a busca pelo maior predecessor ou pelo menor 
+sucessor deve ser feita com uma única passada, já removendo e 
+ajustando a árvore para que a remoção seja concluída.
+
+
+
+
+
+
+
+
