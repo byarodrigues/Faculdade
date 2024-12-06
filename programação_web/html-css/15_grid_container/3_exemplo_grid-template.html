@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID CONTAINER - EXEMPLO 3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-shadow: inset 0 0 2px black;
+        }
+
+        p, h1, h2, h3, h4, h5, h6 {
+            box-shadow: none;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template:
+            [row1-start] "header header" 10vh [row1-end]
+            [row2-start] "nav content" auto [row2-end]
+            [row3-start] "footer footer" 10vh [row3-end]
+            / 20vw auto;
+        }
+
+        div {
+            padding: 30px;
+        }
+
+        .banner {
+            grid-area: header;
+            background-image: url(imagens/banner.jpg);
+            text-align: center;
+            font: 30px sans-serif;
+        }
+            
+        .menu {
+            grid-area: nav;
+            background-image: url(imagens/menu.png);
+            background-size: cover;
+            text-align: center;
+            font: 30px sans-serif;
+        }
+
+        .conteudo {
+            grid-area: content;
+            text-align: justify;
+            font: 18px sans-serif;
+        }
+
+        .rodape {
+            grid-area: footer;
+            background: linear-gradient(to bottom, rgb(187, 187, 226), rgb(230, 204, 204));
+            text-align: center;
+            font: 30px sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <div class="banner">BANNER</div>
+        <div class="menu">MENU</div>
+        <div class="conteudo">
+            <h3>Presença</h3>
+            <br>
+            <p>É preciso que a saudade desenhe tuas linhas perfeitas,
+            teu perfil exato e que, apenas, levemente, o vento
+            das horas ponha um frêmito em teus cabelos…
+            É preciso que a tua ausência trescale
+            sutilmente, no ar, a trevo machucado,
+            as folhas de alecrim desde há muito guardadas
+            não se sabe por quem nalgum móvel antigo…
+            Mas é preciso, também, que seja como abrir uma janela
+            e respirar-te, azul e luminosa, no ar.
+            É preciso a saudade para eu sentir
+            como sinto – em mim – a presença misteriosa da vida…
+            Mas quando surges és tão outra e múltipla e imprevista
+            que nunca te pareces com o teu retrato…
+            E eu tenho de fechar meus olhos para ver-te.</p>
+            <br>
+            <h5>Mário Quintana</h5>
+        </div>
+        <div class="rodape">RODAPÉ</div>
+    </section>
+
+</body>
+</html>

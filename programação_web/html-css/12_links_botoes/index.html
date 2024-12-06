@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/ifmg.png" type="image/png">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .layout {
+            margin: 50px;
+            text-align: center;
+        }
+
+        .link_sombra {
+            text-decoration: none;
+            background-color: green;
+            color: white;
+            min-width: 200px;
+            padding: 10px 30px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .link_sombra:hover {
+            background-color: red;
+            color: white;
+            border-bottom: yellow 1px solid;
+            border-right: yellow 1px solid;
+        }
+
+        .link_luz {
+            text-decoration: none;
+            background-color: green;
+            color: white;
+            min-width: 200px;
+            padding: 10px 30px;
+            margin-top: 10px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .link_luz:hover {
+            background-color: red;
+            color: white;
+            box-shadow: 0 0 10px yellow;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <a href="https://www.ifmg.edu.br" class="link_sombra">Visitar IFMG</a>
+        
+        <a href="https://www.ifmg.edu.br" class="link_luz">Visitar IFMG</a>
+
+    </div>
+
+</body>
+
+</html>
