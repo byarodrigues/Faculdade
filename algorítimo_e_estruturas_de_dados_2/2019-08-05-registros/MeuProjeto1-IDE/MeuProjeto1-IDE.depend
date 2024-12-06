@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1574075954 source:g:\ifmg-cloud\ifmg-2019-2\disciplinas\aed-2\aulas\2019-11-18-bibliotecas\meuprojeto1-ide\main.cpp
+	<iostream>
+	<clocale>
+	"biblio.h"
+
+1574075954 g:\ifmg-cloud\ifmg-2019-2\disciplinas\aed-2\aulas\2019-11-18-bibliotecas\meuprojeto1-ide\biblio.h
+
+1574075954 source:g:\ifmg-cloud\ifmg-2019-2\disciplinas\aed-2\aulas\2019-11-18-bibliotecas\meuprojeto1-ide\biblio-h-implements.cpp
+	<iostream>
+	"biblio.h"
+
+1574075954 source:g:\ifmg-cloud\ifmg-2019-2\disciplinas\aed-2\aulas\2019-11-18-bibliotecas\meuprojeto1-ide\biblio.h
+

@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1496942337 source:/media/gabriel/DADOS/IFMG/IFMG-2017-1/2017-1-AED2/AULAS/2017-06-08-TADcomBiblio/TAD-Lineares/main.cpp
+	<iostream>
+	"bibTadLinear.h"
+
+1496942701 source:/media/gabriel/DADOS/IFMG/IFMG-2017-1/2017-1-AED2/AULAS/2017-06-08-TADcomBiblio/TAD-Lineares/implemBibTadLinear.cpp
+	<iostream>
+	"bibTadLinear.h"
+
+1496942784 /media/gabriel/DADOS/IFMG/IFMG-2017-1/2017-1-AED2/AULAS/2017-06-08-TADcomBiblio/TAD-Lineares/bibTadLinear.h
+
+1496946301 source:d:\ifmg\ifmg-2017-1\2017-1-aed2\aulas\2017-06-08-tadcombiblio\tad-lineares\implembibtadlinear.cpp
+	<iostream>
+	"bibTadLinear.h"
+
+1496946384 d:\ifmg\ifmg-2017-1\2017-1-aed2\aulas\2017-06-08-tadcombiblio\tad-lineares\bibtadlinear.h
+
+1496946456 source:d:\ifmg\ifmg-2017-1\2017-1-aed2\aulas\2017-06-08-tadcombiblio\tad-lineares\main.cpp
+	<iostream>
+	"bibTadLinear.h"
+
+1496946302 source:g:\ifmg-cloud\ifmg-2018-2\disciplinas\2018-2-aed2\public\aulas\20181127-biblioteca\tadcombiblio\tadcombiblio\tad-lineares\implembibtadlinear.cpp
+	<iostream>
+	"bibTadLinear.h"
+
+1496946386 g:\ifmg-cloud\ifmg-2018-2\disciplinas\2018-2-aed2\public\aulas\20181127-biblioteca\tadcombiblio\tadcombiblio\tad-lineares\bibtadlinear.h
+
+1543339406 source:g:\ifmg-cloud\ifmg-2018-2\disciplinas\2018-2-aed2\public\aulas\20181127-biblioteca\tadcombiblio\tadcombiblio\tad-lineares\main.cpp
+	<iostream>
+	"bibTadLinear.h"
+

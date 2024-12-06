@@ -1,0 +1,15 @@
+﻿Compilando com mais de um arquivo .cpp:
+
+
+Isso deve ser feito quando acontece o erro de "linkagem" dos arquivos (quando usamos bibliotecas).
+Para resolver, basta compilar todos os arquivos .cpp de uma vez, via console, com o comando: 
+
+
+g++ arquivo1.cpp arquivo2.cpp arquivoN.cpp -o nomedoprograma
+
+ou 
+gcc ... (descubra o nome do seu compilador)
+
+
+
+Se for no Windows, adicione a extensão .exe ao nomedoprograma.exe

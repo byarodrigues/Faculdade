@@ -1,0 +1,137 @@
+# depslib dependency file v1.0
+1575781594 source:c:\users\luiz\desktop\trabalhofinal2.0\main.cpp
+	<iostream>
+	"bibliLISTAVACAS.h"
+	"bibliARV.h"
+	"interface.h"
+	"bibliFILA.h"
+	<clocale>
+
+1575593413 c:\users\luiz\desktop\trabalhofinal2.0\bibliarv.h
+	"bibliLISTAVACAS.h"
+	<fstream>
+	<iostream>
+	"bibliFILA.h"
+	"structsbibli.h"
+
+1575861666 c:\users\luiz\desktop\trabalhofinal2.0\biblilistavacas.h
+	<iostream>
+	"bibliARV.h"
+	<stdio.h>
+	"structsbibli.h"
+
+1575593413 source:c:\users\luiz\desktop\trabalhofinal2.0\bibliarv.h
+	"bibliLISTAVACAS.h"
+	<fstream>
+	<iostream>
+	"bibliFILA.h"
+	"structsbibli.h"
+
+1575891394 source:c:\users\luiz\desktop\trabalhofinal2.0\implementlistavacas.cpp
+	"bibliLISTAVACAS.h"
+	<iostream>
+	<string>
+	<fstream>
+	"bibliARV.h"
+	<stdio.h>
+	<stdlib.h>
+
+1575891887 source:c:\users\luiz\desktop\trabalhofinal2.0\implementarv.cpp
+	<fstream>
+	<cstdlib>
+	<stdlib.h>
+	"bibliARV.h"
+	"structsbibli.h"
+	"bibliFILA.h"
+
+1575596463 c:\users\luiz\desktop\trabalhofinal2.0\biblifila.h
+	"structsbibli.h"
+	"bibliFILA.h"
+
+1575892110 source:c:\users\luiz\desktop\trabalhofinal2.0\implementfila.cpp
+	"bibliFILA.h"
+	<iostream>
+	"structsbibli.h"
+	"bibliARV.h"
+	<cstdlib>
+	<stdlib.h>
+
+1575892110 c:\users\luiz\desktop\trabalhofinal2.0\interface.h
+	"bibliARV.h"
+	"bibliLISTAVACAS.h"
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<cstdio>
+
+1575779809 c:\users\luiz\desktop\trabalhofinal2.0\structsbibli.h
+	<iostream>
+
+1575593413 source:c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\bibliarv.h
+	"bibliLISTAVACAS.h"
+	<fstream>
+	<iostream>
+	"bibliFILA.h"
+	"structsbibli.h"
+
+1575861666 c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\biblilistavacas.h
+	<iostream>
+	"bibliARV.h"
+	<stdio.h>
+	"structsbibli.h"
+
+1575593413 c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\bibliarv.h
+	"bibliLISTAVACAS.h"
+	<fstream>
+	<iostream>
+	"bibliFILA.h"
+	"structsbibli.h"
+
+1575596463 c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\biblifila.h
+	"structsbibli.h"
+	"bibliFILA.h"
+
+1575779809 c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\structsbibli.h
+	<iostream>
+
+1575892110 source:c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\implementfila.cpp
+	"bibliFILA.h"
+	<iostream>
+	"structsbibli.h"
+	"bibliARV.h"
+	<cstdlib>
+	<stdlib.h>
+
+1575781594 source:c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\main.cpp
+	<iostream>
+	"bibliLISTAVACAS.h"
+	"bibliARV.h"
+	"interface.h"
+	"bibliFILA.h"
+	<clocale>
+
+1575910795 c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\interface.h
+	"bibliARV.h"
+	"bibliLISTAVACAS.h"
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<cstdio>
+
+1575900062 source:c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\implementarv.cpp
+	<fstream>
+	<cstdlib>
+	<stdlib.h>
+	"bibliARV.h"
+	"structsbibli.h"
+	"bibliFILA.h"
+
+1575901911 source:c:\users\beatr\onedrive\documentos\aed2\trab final\trabalhofinal2.0\implementlistavacas.cpp
+	"bibliLISTAVACAS.h"
+	<iostream>
+	<string>
+	<fstream>
+	"bibliARV.h"
+	<stdio.h>
+	<stdlib.h>
+
