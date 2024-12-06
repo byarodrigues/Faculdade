@@ -1,0 +1,12 @@
+                                      Abacus
+
+O Abacus é um simulador para o 8085 desenvolvido pelo professor Roberto M. Ziller,
+do Departamento de Engenharia Elétrica da UFSC, para acompanhar seu livro
+
+                    "Microprocessadores: Conceitos Importates".
+
+O uso do Abacus para fins educacionais é gratuito. Neste caso, pode ser distribuído
+livremente, desde que acompanhado deste arquivo de licença e do arquivo Readme.txt,
+ambos sem alterações.
+O uso para outros fins depende de licença por escrito do autor. Maiores informações
+podem ser conseguidas a partir de www.eel.ufsc.br/microprocessadores.
