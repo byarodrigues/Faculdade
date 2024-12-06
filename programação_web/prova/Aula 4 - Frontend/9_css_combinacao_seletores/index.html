@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS - Combinando seletores</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <p class="classe1">P com classe 1.</p>
+
+    <div>Div sem classe.</div>
+    
+    <div class="classe2">Div com classe 2.</div>
+    <div class="classe3">Div com classe 3.</div>
+    <div class="classe4">Div com classe 4.</div>
+
+    <div class="classe2 classe3">
+        <p>Div com P setado com classes 2 e 3</p>
+    </div>
+
+    <div class="classe1">Div associado a classe 1.</div>
+
+    <div class="classe1">
+        <p>Div com P setado com classe 1</p>
+    </div>
+
+    <h1>Texto dentro de um H1.</h1>
+    <h2>Texto dentro de um H2.</h2>
+    <h3>Texto dentro de um H3.</h3>
+    <h4>Texto dentro de um H4.</h4>
+
+    <div class="classe3">
+        <ul>
+            <li>Primeiro item da lista.</li>
+            <li>Segundo item da lista.</li>
+            <li>Terceito item da lista.</li>
+            <li class="classe1">Quarto item da lista.</li>
+            <li class="classe2">Quinto item da lista.</li>
+        </ul>
+    </div>
+
+    <div>
+        <ol>
+            <!-- não é afetado, 
+            pois não é li dentro de div -->
+            <p> Lista de coisas </p>
+            <li id="primeiro_lista1"><h1>Valor 1</h1></li>
+            <li><h2>Valor 2</h2></li>
+            <li><h3>Valor 3</h3></li>
+            <li class="classe4"><h4>Valor 4</h4></li>
+        </ol>
+    </div>
+
+    <!-- não esta dentro de div nenhuma -->
+    <ol>
+        <p> Lista de coisas 2 </p>
+        <!-- não existe estilo para este id -->
+        <li id="primeiro_lista2"><h1>Valor 1</h1></li>
+        <li><h2>Valor 2</h2></li>
+        <li><h3>Valor 3</h3></li>
+        <li class="classe4"><h4>Valor 4</h4></li>
+    </ol>
+    
+
+    <p>Fim do exercício sobre seletores.</p>
+
+</body>
+
+</html>

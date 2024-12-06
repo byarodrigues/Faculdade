@@ -1,0 +1,66 @@
+/* elementos que tenham a 
+classe1 serão influenciados */
+.classe1 {
+    background: blue;
+    color: white;
+}
+
+/* classes podem ser escritas separadamente 
+e depois chamadas individualmente ou juntas 
+separadas por espaco no componente */
+.classe2 {
+    background: yellow;
+}
+
+.classe3 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.classe4 {
+    color: purple;
+}
+
+/* somente as divs que tenham a classe1 serão 
+influenciadas, outras divs nao */
+div.classe1 {
+    background: red;
+    font-size: 20px;
+} 
+
+/* voce pode criar uma mesma regra para varios 
+componentes diferentes separando por virgula */
+h1,h2,h3,h4 {
+    text-decoration: underline;
+}
+
+/* aplica a regra a somente elementos especificos 
+que estejam dentro de um outro elemento especifico, 
+sem levar em consideracao qualquer outro elemento 
+que exista entre eles */
+div li {
+    background: orange;
+}
+
+div.classe3 li.classe2 {
+    background: brown;
+    color: white;
+    font-weight: normal;
+}
+
+/* aplica a regra a somente elementos especificos que 
+estejam dentro de um outro elemento especifico, sem levar
+em consideracao qualquer outro elemento que exista 
+entre eles, mas que tenham um id especifico */
+div li#primeiro_lista1 {
+    background: fuchsia
+}
+
+/* aplica a regra a somente elementos especificos que 
+estejam dentro de um outro elemento especifico, sem levar
+em consideracao qualquer outro elemento que exista 
+entre eles, mas que tenham uma classe especifica */
+div li.classe4 {
+    background: green;
+}
+

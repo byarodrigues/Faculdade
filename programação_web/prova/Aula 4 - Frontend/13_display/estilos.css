@@ -1,0 +1,32 @@
+/* folha de estilos de CSS3 */
+
+p {
+    display: flow-root;
+    /*
+    flow-root: padrão - vertical   
+    inline: horizontal
+    block: vertical
+    none: não exibe
+    */
+}
+
+.bloco {
+    /*se deixar apenas inline ele ignora os valores de width e height*/
+    /*display: inline;*/
+    display: inline-block;
+    background-color: yellow;
+    width: 300px;
+    height: 150px;
+}
+
+.navegacao {
+    padding: 20px;
+    background-color: yellow;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navegacao li {
+    display: inline-block;
+    margin: 0 20px;
+}
