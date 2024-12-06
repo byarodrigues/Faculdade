@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+
+<body>
+
+    <select id="slcPaises"></select>
+
+    <script>
+
+        //alert('PRIMEIRO COMANDO');
+
+        fetch('https://restcountries.com/v3.1/all')
+            .then(dados => {
+                return dados.json();
+            })
+            .then(json => {
+                let paises = json;
+                let select = document.querySelector("select");
+                select.innerHTML = "";
+
+                paises.forEach((pais, index) => {
+                    let option = document.createElement("option");
+                    option.innerHTML = `${pais.name.common}`;
+                    option.value = index;
+                    select.appendChild(option);
+                });
+            })
+            .catch(erro => {
+                console.log('rolou um erro: ' + erro.message)
+            })
+
+        //alert('SEGUNDO COMANDO');
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Sentimento</title>
+</head>
+<body>
+    <h1>Análise de Sentimento</h1>
+    <p>Insira um texto para analisar o sentimento:</p>
+    <textarea id="txtTexto" rows="4" cols="50"></textarea><br>
+    <button id="btnAnalisar">Analisar</button><br><br>
+    <div id="resultado"></div>
+
+    <script>
+        document.querySelector("#btnAnalisar").addEventListener('click', () => {
+            analisarSentimento();
+        })
+
+        async function analisarSentimento() {
+            const texto = document.getElementById("txtTexto").value;
+            const apiKey = "c987f5786c014edf762f109b9cc6a4cd370ef09445a3052c00389707";
+
+            const url = `https://api.textrazor.com/sentiment?text=${encodeURIComponent(texto)}`;
+
+            try {
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "x-textrazor-key": apiKey,
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+
+                    if (data.response && data.response.sentiment) {
+                        const resultadoDiv = document.getElementById("resultado");
+                        resultadoDiv.innerHTML = `<p>Texto: ${texto}</p>`;
+                        resultadoDiv.innerHTML += `<p>Sentimento: ${data.response.sentiment.label}</p>`;
+                        resultadoDiv.innerHTML += `<p>Confiança: ${data.response.sentiment.confidence}%</p>`;
+                    } else {
+                        console.error("Nenhum sentimento detectado.");
+                    }
+                } else {
+                    console.error("Erro na resposta da API");
+                }
+            } catch (error) {
+                console.error("Erro:", error);
+            }
+        }
+    </script>
+</body>
+</html>
