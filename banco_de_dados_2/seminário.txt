@@ -1,0 +1,8 @@
+Introdução a segurança em banco de dados: conceitos, importância e objetivos.
+Riscos e ameaças a segurança em banco de dados: invasões, vírus, roubo de informações e ataques hackers.
+Políticas e estratégias de segurança em banco de dados: autenticação, autorização, criptografia e controle de acesso.
+Ferramentas e tecnologias de segurança em banco de dados: firewalls, antivírus, software de backup e recuperação de dados.
+A importância da gestão de segurança em banco de dados: garantindo a privacidade, integridade e disponibilidade dos dados.
+Exemplos de casos de segurança em banco de dados: como prevenir e lidar com incidentes de segurança.
+Conclusão: a importância de investir em segurança em banco de dados para garantir a confiabilidade e a proteção das informações.
+Perguntas e respostas: sessão para tirar dúvidas sobre segurança em banco de dados.
