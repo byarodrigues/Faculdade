@@ -1,0 +1,331 @@
+
+criar classe que vai herdar de uma dessas classes, o procedimento de min e max tem que incluir o parametro de profundidade max. 
+Usar heuristica e observar se o outro está para vencer.
+
+
+class ConnectFour:
+    def __init__(self, width=7, height=6, sequence=4):
+        self.width = width
+        self.height = height
+        self.sequence = sequence
+        self.board = [[' ' for _ in range(self.width)] for _ in range(self.height)]
+        self.current_player = 'X'
+
+    def make_move(self, column):
+        column = int(column) - 1
+        for row in range(self.height-1, -1, -1):
+            if self.board[row][column] == ' ':
+                self.board[row][column] = self.current_player
+                break
+        else:
+            raise ValueError('Column is full')
+        self.current_player = 'O' if self.current_player == 'X' else 'X'
+
+    def get_winner(self):
+        # Check rows
+        for row in self.board:
+            for player in ('X', 'O'):
+                if row.count(player) == self.sequence:
+                    return player
+
+        # Check columns
+        for col in range(self.width):
+            column = [self.board[row][col] for row in range(self.height)]
+            for player in ('X', 'O'):
+                if column.count(player) == self.sequence:
+                    return player
+
+        # Check diagonal (top-left to bottom-right)
+        for row in range(self.height-self.sequence+1):
+            for col in range(self.width-self.sequence+1):
+                diagonal = [self.board[row+i][col+i] for i in range(self.sequence)]
+                for player in ('X', 'O'):
+                    if diagonal.count(player) == self.sequence:
+                        return player
+
+        # Check diagonal (top-right to bottom-left)
+        for row in range(self.height-self.sequence+1):
+            for col in range(self.sequence-1, self.width):
+                diagonal = [self.board[row+i][col-i] for i in range(self.sequence)]
+                for player in ('X', 'O'):
+                    if diagonal.count(player) == self.sequence:
+                        return player
+
+        # No winner
+        return None
+
+    def __str__(self):
+        s = ''
+        for row in self.board:
+            s += '|' + '|'.join(row) + '|\n'
+        s += '-' * (self.width * 2 + 1) + '\n'
+        s += ' ' + ' '.join(str(i+1) for i in range(self.width)) + ' '
+        return s
+
+game = ConnectFour()
+print(game)
+while True:
+    column = input('Enter column (1-7): ')
+    try:
+        game.make_move(column)
+    except ValueError as e:
+        print(e)
+        continue
+    print(game)
+    winner = game.get_winner()
+    if winner:
+        print(winner, 'wins!')
+        break
+
+
+-------------------------------------------------------
+
+
+board = [[0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0]]
+
+def print_board():
+  for row in board:
+    print(row)
+
+def drop_piece(column, player):
+  for row in range(5, -1, -1):
+    if board[row][column] == 0:
+      board[row][column] = player
+      return
+
+def has_won(player):
+  # check horizontal
+  for row in range(6):
+    for col in range(4):
+      if board[row][col] == player and board[row][col+1] == player and board[row][col+2] == player and board[row][col+3] == player:
+        return True
+
+  # check vertical
+  for row in range(3):
+    for col in range(7):
+      if board[row][col] == player and board[row+1][col] == player and board[row+2][col] == player and board[row+3][col] == player:
+        return True
+
+  # check diagonal
+  for row in range(3):
+    for col in range(4):
+      if board[row][col] == player and board[row+1][col+1] == player and board[row+2][col+2] == player and board[row+3][col+3] == player:
+        return True
+  
+  for row in range(3):
+    for col in range(4):
+      if board[row][col+3] == player and board[row+1][col+2] == player and board[row+2][col+1] == player and board[row+3][col] == player:
+        return True
+
+player = 1
+
+while True:
+  print_board()
+  column = int(input("Player %d, choose a column: " % player))
+  drop_piece(column, player)
+  if has_won(player):
+    print("Player %d has won!" % player)
+    break
+  player = 2 if player == 1 else 1
+
+
+-----------------------------------------------
+
+
+board = [[' ' for _ in range(7)] for _ in range(6)]
+player = 'X'
+game_over = False
+
+def print_board():
+  for row in board:
+    print('|'.join(row))
+
+def drop_piece(column):
+  global game_over
+  for i in range(5, -1, -1):
+    if board[i][column] == ' ':
+      board[i][column] = player
+      break
+  if check_win(i, column):
+    game_over = True
+  elif check_full():
+    game_over = True
+
+def check_win(row, column):
+  # check for horizontal win
+  count = 0
+  for i in range(column, 7):
+    if board[row][i] == player:
+      count += 1
+    else:
+      break
+  for i in range(column - 1, -1, -1):
+    if board[row][i] == player:
+      count += 1
+    else:
+      break
+  if count >= 4:
+    return True
+
+  # check for vertical win
+  count = 0
+  for i in range(row, 6):
+    if board[i][column] == player:
+      count += 1
+    else:
+      break
+  if count >= 4:
+    return True
+
+  # check for diagonal win
+  count = 0
+  for i, j in zip(range(row, 6), range(column, 7)):
+    if board[i][j] == player:
+      count += 1
+    else:
+      break
+  for i, j in zip(range(row - 1, -1, -1), range(column - 1, -1, -1)):
+    if board[i][j] == player:
+      count += 1
+    else:
+      break
+  if count >= 4:
+    return True
+
+  count = 0
+  for i, j in zip(range(row, 6), range(column, -1, -1)):
+    if board[i][j] == player:
+      count += 1
+    else:
+      break
+  for i, j in zip(range(row - 1, -1, -1), range(column + 1, 7)):
+    if board[i][j] == player:
+      count += 1
+    else:
+      break
+  if count >= 4:
+    return True
+
+  return False
+
+class AIPlayer:
+  def __init__(self):
+    pass
+
+  def choose_move(self, board):
+    # choose a random column
+    import random
+    return random.randint(0, 6)
+
+ai = AIPlayer()
+while not game_over:
+  if player == 'X':
+    # player's turn
+    column = int(input(f"{player}, choose a column (0-6): "))
+  else:
+    # AI's turn
+    column = ai.choose_move(board)
+  drop_piece(column)
+  if player == 'X':
+    player = 'O'
+  else:
+    player = 'X'
+
+def check_full():
+  for row in board:
+    if ' ' in row:
+      return False
+  return True
+
+class AIPlayer:
+  def __init__(self, player):
+    self.player = player
+
+  def choose_move(self, board):
+    best_score = -float('inf')
+    best_column = None
+    for column in range(7):
+      score = self.score_move(board, column)
+      if score > best_score:
+        best_score = score
+        best_column = column
+    return best_column
+
+  def score_move(self, board, column):
+    score = 0
+    for row in range(6):
+      if board[row][column] == ' ':
+        board[row][column] = self.player
+        score += self.score_position(board, row, column)
+        board[row][column] = ' '
+    return score
+
+  def score_position(self, board, row, column):
+    score = 0
+    # horizontal
+    count = 0
+    for i in range(column, 7):
+      if board[row][i] == self.player:
+        count += 1
+      else:
+        break
+    for i in range(column - 1, -1, -1):
+      if board[row][i] == self.player:
+        count += 1
+      else:
+        break
+    score += count - 1
+
+    # vertical
+    count = 0
+    for i in range(row, 6):
+      if board[i][column] == self.player:
+        count += 1
+      else:
+        break
+    score += count - 1
+
+    # diagonal
+    count = 0
+    for i, j in zip(range(row, 6), range(column, 7)):
+      if board[i][j] == self.player:
+        count += 1
+      else:
+        break
+    for i, j in zip(range(row - 1, -1, -1), range(column - 1, -1, -1)):
+      if board[i][j] == self.player:
+        count += 1
+      else:
+        break
+    score += count - 1
+
+    count = 0
+    for i, j in zip(range(row, 6), range(column, -1, -1)):
+      if board[i][j] == self.player:
+        count += 1
+      else:
+        break
+    for i, j in zip(range(row - 1, -1, -1), range(column + 1, 7)):
+      if board[i][j] == self.player:
+        count += 1
+      else:
+
+while not game_over:
+  print_board()
+  column = int(input(f"{player}, choose a column (0-6): "))
+  drop_piece(column)
+  if player == 'X':
+    player = 'O'
+  else:
+    player = 'X'
+
+print_board()
+if check_full():
+  print("It's a tie!")
+else:
+  print(f"{player} wins!")
