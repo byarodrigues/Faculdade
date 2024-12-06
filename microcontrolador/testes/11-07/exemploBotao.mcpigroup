@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\..\mikroc\teste\teste1\MyProject.mcppi
+Project1=exemploBotao.mcppi
+[ActiveProject]
+Index=1
