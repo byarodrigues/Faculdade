@@ -2,7 +2,6 @@
 Name=P18F4550
 Clock=8000000
 [FILES]
-File0=MyProject.c
 Count=1
 [BINARIES]
 Count=0
@@ -10,8 +9,8 @@ Count=0
 Count=0
 ActiveImageIndex=-1
 [OPENED_FILES]
-File0=MyProject.c
-File1=..\11-07\exemploBotao.c
+File0=..\11-07\exemploBotao.c
+File1=.\ex1\MyProject.c
 Count=2
 [EEPROM]
 Count=0
@@ -28,13 +27,14 @@ Count=0
 [PLDS]
 Count=0
 [Useses]
-Count=0
+File0=Button
+Count=1
 [MEMORY_MODEL]
 Value=0
 [BUILD_TYPE]
 Value=0
 [ACTIVE_TAB]
-Value=MyProject.c
+Value=ex 2\MyProject.c
 [USE_EEPROM]
 Value=0
 [USE_HEAP]
@@ -47,7 +47,7 @@ Value=
 VECTOR_MODE=0
 IVT_BASE=00000008
 [EXPANDED_NODES]
-1=Sources
+0=MyProject.mcppi
 Count=1
 [LIB_EXPANDED_NODES]
 Count=0

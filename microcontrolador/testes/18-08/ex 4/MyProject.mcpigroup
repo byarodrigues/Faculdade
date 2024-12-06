@@ -1,0 +1,9 @@
+[PROJECTS]
+Count=5
+Project0=..\..\..\mikroc\teste\Nova pasta\MyProject.mcppi
+Project1=..\MyProject.mcppi
+Project2=..\ex 2\MyProject.mcppi
+Project3=..\ex 3\MyProject.mcppi
+Project4=MyProject.mcppi
+[ActiveProject]
+Index=4
