@@ -1,0 +1,6 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F4550 -DL -O11111114 -fo8 -N"C:\Users\bya\Desktop\computação\2022.2\microcontroladores\mikroc\MyProject.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" -SP"C:\Users\bya\Desktop\computação\2022.2\microcontroladores\mikroc\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" "MyProject.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 2027 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	MyProject.c
+error: 2	402	; expected, but 'portd' found	MyProject.c
+error: 5	424	'}' expected '}' found	MyProject.c
+error: 0	102	Finished (with errors): 27 jun 2022, 16:49:13	MyProject.mcppi
