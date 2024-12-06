@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1570727765 source:/home/samuel.dias/Projetos/tp/membtree/main.cpp
+	<iostream>
+	"node.h"
+	"mbtree.h"
+
+1571684392 /home/samuel.dias/Projetos/tp/membtree/include/node.h
+	<iostream>
+
+1618951300 source:/home/samuel/Projetos/tp/membtree/main.cpp
+	<iostream>
+	"node.h"
+	"mbtree.h"
+
+1618954003 /home/samuel/Projetos/tp/membtree/include/node.h
+	<iostream>
+	<vector>
+
+1618953929 /home/samuel/Projetos/tp/membtree/include/mbtree.h
+	<iostream>
+	<vector>
+	<string>
+	"node.h"
+
+1570739835 /home/samuel.dias/Projetos/tp/membtree/include/mbtree.h
+	<iostream>
+	<vector>
+	<string>
+	"node.h"
+
+1618954157 source:c:\users\bya\desktop\computação\2023.2\tp\membtree\main.cpp
+	<iostream>
+	<vector>
+	"node.h"
+	"mbtree.h"
+
+1699496969 c:\users\bya\desktop\computação\2023.2\tp\membtree\include\node.h
+	<iostream>
+	<vector>
+
+1701355364 c:\users\bya\desktop\computação\2023.2\tp\membtree\include\mbtree.h
+	<iostream>
+	<vector>
+	<string>
+	"node.h"
+
