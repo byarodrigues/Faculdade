@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="laz8puzzle.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="191"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="principalfm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PrincipalForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PrincipalFm"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="143"/>
+        <CursorPos X="29" Y="161"/>
+        <UsageCount Value="191"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="buscas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Buscas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="255"/>
+        <CursorPos X="3" Y="262"/>
+        <UsageCount Value="191"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="estados.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Estados"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="187"/>
+        <CursorPos X="3" Y="195"/>
+        <UsageCount Value="187"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="arvores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Arvores"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="23"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="187"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="solucoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Solucoes"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="124"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="arvoredesenho.pas"/>
+        <UnitName Value="ArvoreDesenho"/>
+        <TopLine Value="34"/>
+        <CursorPos X="16" Y="43"/>
+        <UsageCount Value="28"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../../../Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Jânio/laz8puzzle/principalfm.pas"/>
+        <ComponentName Value="PrincipalForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PrincipalFm"/>
+        <TopLine Value="360"/>
+        <CursorPos X="53" Y="372"/>
+        <UsageCount Value="4"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../../../../../Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Jânio/laz8puzzle/arvores.pas"/>
+        <UnitName Value="Arvores"/>
+        <TopLine Value="56"/>
+        <CursorPos X="17" Y="62"/>
+        <UsageCount Value="18"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../../../../../Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Jânio/laz8puzzle/buscas.pas"/>
+        <UnitName Value="Buscas"/>
+        <TopLine Value="152"/>
+        <CursorPos Y="163"/>
+        <UsageCount Value="4"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/usr/share/lazarus/1.0.12/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <TopLine Value="1993"/>
+        <CursorPos X="18" Y="2013"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/inc/objpash.inc"/>
+        <TopLine Value="183"/>
+        <CursorPos X="23" Y="192"/>
+        <UsageCount Value="4"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/inc/objpas.inc"/>
+        <TopLine Value="273"/>
+        <CursorPos X="12" Y="276"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/objpas/classes/classesh.inc"/>
+        <TopLine Value="333"/>
+        <CursorPos X="3" Y="317"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="/usr/share/lazarus/1.0.12/lcl/include/customform.inc"/>
+        <TopLine Value="202"/>
+        <CursorPos X="3" Y="213"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="/usr/share/lazarus/1.0.12/lcl/propertystorage.pas"/>
+        <UnitName Value="PropertyStorage"/>
+        <TopLine Value="136"/>
+        <CursorPos X="16" Y="147"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/objpas/classes/lists.inc"/>
+        <TopLine Value="734"/>
+        <CursorPos X="3" Y="739"/>
+        <UsageCount Value="1"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../../../../Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Jânio/laz8puzzle/solucoes.pas"/>
+        <UnitName Value="Solucoes"/>
+        <TopLine Value="145"/>
+        <CursorPos Y="151"/>
+        <UsageCount Value="7"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/objpas/objpas.pp"/>
+        <TopLine Value="20"/>
+        <CursorPos X="8" Y="28"/>
+        <UsageCount Value="4"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/inc/systemh.inc"/>
+        <TopLine Value="576"/>
+        <CursorPos X="11" Y="585"/>
+        <UsageCount Value="4"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../../../../../../Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Trabalhos/Trabalho 1/laz8puzzle/principalfm.pas"/>
+        <UnitName Value="PrincipalFm"/>
+        <TopLine Value="374"/>
+        <CursorPos X="76" Y="383"/>
+        <UsageCount Value="4"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/linux/system.pp"/>
+        <UnitName Value="System"/>
+        <TopLine Value="138"/>
+        <CursorPos X="3" Y="140"/>
+        <UsageCount Value="4"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="/Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Trabalhos/Trabalho 1/Implementação/laz8puzzle/arvores.pas"/>
+        <UnitName Value="Arvores"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="62"/>
+        <UsageCount Value="4"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="/Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Trabalhos/Trabalho 1/Implementação/laz8puzzle/buscas.pas"/>
+        <UnitName Value="Buscas"/>
+        <TopLine Value="394"/>
+        <CursorPos X="10" Y="418"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="/Dropbox/Documentos/Doutorado/Disciplinas/Aprendizado de Máquina/Trabalhos/Trabalho 1/Implementação/laz8puzzle/solucoes.pas"/>
+        <UnitName Value="Solucoes"/>
+        <TopLine Value="218"/>
+        <CursorPos X="3" Y="225"/>
+        <UsageCount Value="34"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="/usr/share/lazarus/1.0.14/components/lazutils/avglvltree.pas"/>
+        <UnitName Value="AvgLvlTree"/>
+        <TopLine Value="122"/>
+        <CursorPos X="3" Y="78"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="buscas.pas"/>
+        <Caret Line="53" Column="22" TopLine="38"/>
+      </Position1>
+      <Position2>
+        <Filename Value="buscas.pas"/>
+        <Caret Line="363" Column="3" TopLine="352"/>
+      </Position2>
+      <Position3>
+        <Filename Value="buscas.pas"/>
+        <Caret Line="362" Column="27" TopLine="362"/>
+      </Position3>
+      <Position4>
+        <Filename Value="buscas.pas"/>
+        <Caret Line="171" Column="25" TopLine="164"/>
+      </Position4>
+      <Position5>
+        <Filename Value="solucoes.pas"/>
+        <Caret Line="169" Column="3" TopLine="165"/>
+      </Position5>
+      <Position6>
+        <Filename Value="solucoes.pas"/>
+        <Caret Line="160" TopLine="160"/>
+      </Position6>
+      <Position7>
+        <Filename Value="solucoes.pas"/>
+        <Caret Line="179" Column="19" TopLine="174"/>
+      </Position7>
+      <Position8>
+        <Filename Value="solucoes.pas"/>
+      </Position8>
+      <Position9>
+        <Filename Value="principalfm.pas"/>
+        <Caret Line="378" Column="17" TopLine="308"/>
+      </Position9>
+      <Position10>
+        <Filename Value="principalfm.pas"/>
+        <Caret Line="113" Column="3" TopLine="110"/>
+      </Position10>
+      <Position11>
+        <Filename Value="principalfm.pas"/>
+        <Caret Line="134" Column="3" TopLine="130"/>
+      </Position11>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="L.Count"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,404 @@
+object PrincipalForm: TPrincipalForm
+  Left = 375
+  Height = 583
+  Top = 158
+  Width = 985
+  Caption = 'Laz 8-Puzzle'
+  ClientHeight = 583
+  ClientWidth = 985
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.0.12.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 583
+    Top = 0
+    Width = 232
+    Align = alLeft
+    ClientHeight = 579
+    ClientWidth = 228
+    TabOrder = 0
+    object GroupBox3: TGroupBox
+      Left = 0
+      Height = 138
+      Top = 441
+      Width = 228
+      Align = alClient
+      Caption = '&Informações'
+      ClientHeight = 108
+      ClientWidth = 224
+      TabOrder = 0
+      object MemoInfo: TMemo
+        Left = 0
+        Height = 108
+        Top = 0
+        Width = 224
+        Align = alClient
+        ReadOnly = True
+        TabOrder = 0
+      end
+    end
+    object CheckBoxExibirArvore: TCheckBox
+      Left = 0
+      Height = 26
+      Top = 382
+      Width = 228
+      Align = alTop
+      Caption = 'E&xibir árvore'
+      Checked = True
+      OnChange = CheckBoxExibirArvoreChange
+      State = cbChecked
+      TabOrder = 1
+    end
+    object Panel2: TPanel
+      Left = 0
+      Height = 134
+      Top = 0
+      Width = 228
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 134
+      ClientWidth = 228
+      TabOrder = 2
+      object GroupBox2: TGroupBox
+        Left = 0
+        Height = 101
+        Top = 0
+        Width = 110
+        Align = alLeft
+        Caption = '&Estado Inicial'
+        ClientHeight = 71
+        ClientWidth = 106
+        TabOrder = 0
+        object GridEstadoInicial: TStringGrid
+          Left = 0
+          Height = 71
+          Top = 0
+          Width = 106
+          Align = alClient
+          AutoFillColumns = True
+          ColCount = 3
+          Columns = <          
+            item
+              Alignment = taCenter
+              Title.Caption = 'Title'
+              Width = 34
+            end          
+            item
+              Alignment = taCenter
+              Title.Caption = 'Title'
+              Width = 34
+            end          
+            item
+              Alignment = taCenter
+              Title.Caption = 'Title'
+              Width = 34
+            end>
+          DefaultColWidth = 30
+          DefaultRowHeight = 22
+          FixedCols = 0
+          FixedRows = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goSmoothScroll]
+          RowCount = 3
+          TabOrder = 0
+          OnClick = GridEstadoInicialClick
+          ColWidths = (
+            34
+            34
+            34
+          )
+        end
+      end
+      object GroupBox4: TGroupBox
+        Left = 110
+        Height = 101
+        Top = 0
+        Width = 118
+        Align = alClient
+        Caption = 'Meta'
+        ClientHeight = 71
+        ClientWidth = 114
+        TabOrder = 1
+        object StringGrid1: TStringGrid
+          Left = 0
+          Height = 71
+          Top = 0
+          Width = 114
+          Align = alClient
+          AutoFillColumns = True
+          Color = clDefault
+          ColCount = 3
+          Columns = <          
+            item
+              Alignment = taCenter
+              Title.Caption = 'Title'
+              Width = 36
+            end          
+            item
+              Alignment = taCenter
+              Title.Caption = 'Title'
+              Width = 36
+            end          
+            item
+              Alignment = taCenter
+              Title.Caption = 'Title'
+              Width = 38
+            end>
+          DefaultColWidth = 30
+          DefaultRowHeight = 22
+          Enabled = False
+          ExtendedSelect = False
+          FixedCols = 0
+          FixedRows = 0
+          RowCount = 3
+          TabOrder = 0
+          TabStop = False
+          ColWidths = (
+            36
+            36
+            38
+          )
+          Cells = (
+            8
+            0
+            0
+            '1'
+            0
+            1
+            '4'
+            0
+            2
+            '7'
+            1
+            0
+            '2'
+            1
+            1
+            '5'
+            1
+            2
+            '8'
+            2
+            0
+            '3'
+            2
+            1
+            '6'
+          )
+        end
+      end
+      object GroupBox6: TGroupBox
+        Left = 0
+        Height = 33
+        Top = 101
+        Width = 228
+        Align = alBottom
+        ClientHeight = 29
+        ClientWidth = 224
+        TabOrder = 2
+        object ButtonGerarEstado: TButton
+          Left = 12
+          Height = 25
+          Top = -1
+          Width = 190
+          Caption = '&Embaralhar estado inicial'
+          OnClick = ButtonGerarEstadoClick
+          TabOrder = 0
+        end
+      end
+    end
+    object GroupBox7: TGroupBox
+      Left = 0
+      Height = 248
+      Top = 134
+      Width = 228
+      Align = alTop
+      Caption = '&Opções de busca'
+      ClientHeight = 218
+      ClientWidth = 224
+      TabOrder = 3
+      object RadioGroupTipoBusca: TRadioGroup
+        Left = 0
+        Height = 137
+        Top = 0
+        Width = 224
+        Align = alClient
+        AutoFill = True
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 133
+        ClientWidth = 220
+        ItemIndex = 0
+        Items.Strings = (
+          'com &heurística (A*)'
+          'em &largura'
+          'em p&rofundudade'
+          'profundidade &limitada'
+          '&aprofundamento iterativo'
+        )
+        OnSelectionChanged = RadioGroupTipoBuscaSelectionChanged
+        TabOrder = 0
+      end
+      object GroupBox5: TGroupBox
+        Left = 0
+        Height = 55
+        Top = 163
+        Width = 224
+        Align = alBottom
+        ClientHeight = 51
+        ClientWidth = 220
+        TabOrder = 1
+        object Label1: TLabel
+          Left = 4
+          Height = 15
+          Top = 6
+          Width = 166
+          Caption = 'Limi&te de Aprofundamento'
+          FocusControl = SpinEditLimite
+          ParentColor = False
+        end
+        object SpinEditLimite: TSpinEdit
+          Left = 4
+          Height = 20
+          Top = 22
+          Width = 166
+          Enabled = False
+          MaxValue = 2147483647
+          TabOrder = 0
+          Value = 10
+        end
+      end
+      object CheckTabelaTransposicao: TCheckBox
+        Left = 0
+        Height = 26
+        Top = 137
+        Width = 224
+        Align = alBottom
+        Caption = 'Com tabela de transposição'
+        Checked = True
+        Enabled = False
+        State = cbChecked
+        TabOrder = 2
+      end
+    end
+    object GroupBox8: TGroupBox
+      Left = 0
+      Height = 33
+      Top = 408
+      Width = 228
+      Align = alTop
+      ClientHeight = 29
+      ClientWidth = 224
+      TabOrder = 4
+      object ButtonBuscar: TButton
+        Left = 36
+        Height = 25
+        Top = 4
+        Width = 120
+        Caption = '&Buscar'
+        OnClick = ButtonBuscarClick
+        TabOrder = 0
+      end
+    end
+  end
+  object GroupBox9: TGroupBox
+    Left = 232
+    Height = 583
+    Top = 0
+    Width = 753
+    Align = alClient
+    Caption = 'Árvore de busca'
+    ClientHeight = 553
+    ClientWidth = 749
+    TabOrder = 1
+    object ScrollBoxArvore: TScrollBox
+      Left = 0
+      Height = 500
+      Top = 0
+      Width = 749
+      HorzScrollBar.Page = 745
+      VertScrollBar.Page = 496
+      Align = alClient
+      TabOrder = 0
+      OnPaint = ScrollBoxArvorePaint
+    end
+    object GroupBox10: TGroupBox
+      Left = 0
+      Height = 53
+      Top = 500
+      Width = 749
+      Align = alBottom
+      Caption = 'Legenda'
+      ClientHeight = 23
+      ClientWidth = 745
+      TabOrder = 1
+      object StringGrid2: TStringGrid
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 745
+        Align = alClient
+        AutoFillColumns = True
+        ColCount = 4
+        Columns = <        
+          item
+            Alignment = taCenter
+            Color = clLime
+            Title.Caption = 'Title'
+            Width = 186
+          end        
+          item
+            Alignment = taCenter
+            Color = clRed
+            Title.Caption = 'Title'
+            Width = 186
+          end        
+          item
+            Alignment = taCenter
+            Color = clYellow
+            Title.Caption = 'Title'
+            Width = 186
+          end        
+          item
+            Alignment = taCenter
+            Color = clWhite
+            Title.Caption = 'Title'
+            Width = 186
+          end>
+        FixedCols = 0
+        FixedRows = 0
+        Flat = True
+        RowCount = 1
+        ScrollBars = ssNone
+        TabOrder = 0
+        ColWidths = (
+          186
+          186
+          186
+          186
+        )
+        Cells = (
+          4
+          0
+          0
+          'Solução'
+          1
+          0
+          'Podado'
+          2
+          0
+          'Visitado'
+          3
+          0
+          'Gerado'
+        )
+      end
+    end
+  end
+end

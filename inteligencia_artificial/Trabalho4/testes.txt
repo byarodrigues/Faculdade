@@ -1,0 +1,5 @@
+1 - mutacao 0.5 populaçao 70
+2 - mutacao 1   populacao 100
+3 - mutacao 0.3 populacao 100
+4 - mutacao 0.6 populacao 100
+5 - mutacao 0.5 pupolacao 80
