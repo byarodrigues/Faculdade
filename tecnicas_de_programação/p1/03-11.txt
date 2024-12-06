@@ -1,0 +1,12 @@
+header/ registro / arquivo //pra funcionar
+Header:
+.h:
+serve para identificas as coisas no arquivo
+tendo quatro atributos: tipo, versão, dois numeros inteiros que guarda primeiro registro valido e 1o excluido
+Com a formula descobre qual bite vai começar
+tem herança publica da classe de serialização. 
+*tem que implementar sem mudar as classes*
+.cpp:
+
+
+Registro:
