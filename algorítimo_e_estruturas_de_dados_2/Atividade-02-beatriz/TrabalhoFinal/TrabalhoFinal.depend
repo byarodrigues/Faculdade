@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1561862759 source:c:\users\luiz\desktop\trabalhofinal\main.cpp
+	<iostream>
+	<clocale>
+	<stdlib.h>
+	<fstream>
+	<cstdlib>
+	<string>
+
+1562085444 source:c:\users\luiz\desktop\trabalhofinalaedi\trabalhofinal\main.cpp
+	<iostream>
+	<clocale>
+	<stdlib.h>
+	<fstream>
+	<cstdlib>
+	<string>
+
+1562085446 source:d:\cliente\desktop\trabalhofinalaedi\trabalhofinal\main.cpp
+	<iostream>
+	<clocale>
+	<stdlib.h>
+	<fstream>
+	<cstdlib>
+	<string>
+
+1562085446 source:c:\users\beatr\onedrive\documentos\aed2\atividade-02-beatriz\trabalhofinal\main.cpp
+	<iostream>
+	<clocale>
+	<stdlib.h>
+	<fstream>
+	<cstdlib>
+	<string>
+

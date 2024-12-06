@@ -1,0 +1,5 @@
+Maria Doida;0;23
+Lele da Cuca;1;31
+Cuca Feia;0;17
+
+Gabriel;1;38
