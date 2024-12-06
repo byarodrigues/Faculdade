@@ -1,0 +1,17 @@
+luiz:
+lxi sp 2090h
+mvi a 03h
+mvi b 04h
+volta add a
+dcr c
+jnz volta
+hlc
+
+prof:
+lxi sp 2090h
+mvi a 00h
+mvi c 03h
+volta adi 04h
+dcr c
+jnz volta
+hlt
