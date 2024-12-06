@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Livro: <input type="text" id="txtLivro" value="João"><br>
+    Versiculo: <input type="number" id="txtVersiculo" value="3"><br>
+    Inicio: <input type="number" id="txtInicio" value="16"><br>
+    <button onclick="pegaVersiculo()">Mostrar</button><br><br>
+    <div></div>
+
+    <script>
+        //tente genesis 9 21
+        //tente efesios 5 18
+        //tente exodo 21:20-21
+        async function pegaVersiculo() {
+            const livro = document.getElementById("txtLivro").value;
+            const versiculo = document.getElementById("txtVersiculo").value;
+            const inicio = document.getElementById("txtInicio").value;
+    
+            if (livro === "" || versiculo === "" || inicio === "") {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+    
+            const url = `https://bible-api.com/${livro}+${versiculo}:${inicio}?translation=almeida`;
+    
+            try {
+                const resultado = await fetch(url);
+                const texto = await resultado.json();
+                const div = document.querySelector("div");
+                div.innerHTML = `${texto.text}`;
+            } catch (erro) {
+                console.error('rolou um erro:', erro);
+            }
+        }
+    </script>
+
+</body>
+</html>
