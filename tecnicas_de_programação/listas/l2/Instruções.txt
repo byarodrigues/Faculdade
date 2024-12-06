@@ -1,0 +1,12 @@
+Resolva os seguintes exercícios propostos. A solução deve ser feita 
+usando POO, juntando todas as classes em um único arquivo que será 
+copiado para a área de submissão dos exercícios. Para reduzir o grau 
+de dificuldade inicial (identificar qual o algoritmo a ser usado), 
+utilize os seguintes algoritmos para cada problema: * Movimentos do 
+Cavalo: Bellman-Ford * Mania de Par: Dijkstra * Credo com ParaTudo!: 
+Floyd-Warshall A nota final será dada pelo score calculado pelo 
+beecrowd, ponderado pela análise do código (qualidade da POO, 
+qualidade da solução, eficiência, etc.). Se for detectada cópia de 
+outros estudantes, ou da internet, a qualquer momento, TODOS OS 
+EXERCÍCIOS serão zerados!
+
