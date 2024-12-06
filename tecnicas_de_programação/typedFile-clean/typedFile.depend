@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1570117830 source:/home/samuel/Projetos/typedFile/main.cpp
+	<iostream>
+	<clocale>
+	"header.h"
+	"record.h"
+	"typedfile.h"
+	"intserial.h"
+
+1570067211 source:/home/samuel/Projetos/typedFile/src/header.cpp
+	"header.h"
+
+1570044850 /home/samuel/Projetos/typedFile/include/header.h
+	"serializable.h"
+
+1570044844 /home/samuel/Projetos/typedFile/include/serializable.h
+	<string>
+
+1570109311 /home/samuel/Projetos/typedFile/include/record.h
+	<string>
+	"serializable.h"
+
+1570117830 /home/samuel/Projetos/typedFile/include/typedfile.h
+	<fstream>
+	<type_traits>
+
+1570039086 source:/home/samuel.dias/Projetos/typedFile/main.cpp
+	<iostream>
+	"header.h"
+	"record.h"
+	"typedfile.h"
+
+1570044850 /home/samuel.dias/Projetos/typedFile/include/header.h
+	"serializable.h"
+
+1570044844 /home/samuel.dias/Projetos/typedFile/include/serializable.h
+	<string>
+
+1570045637 /home/samuel.dias/Projetos/typedFile/include/record.h
+	<string>
+	"serializable.h"
+
+1570045509 /home/samuel.dias/Projetos/typedFile/include/typedfile.h
+	<fstream>
+	<type_traits>
+
+1570044864 source:/home/samuel.dias/Projetos/typedFile/src/header.cpp
+	"header.h"
+
+1570069201 source:/home/samuel/Projetos/typedFile/src/intserial.cpp
+	"intserial.h"
+
+1570069193 /home/samuel/Projetos/typedFile/include/intserial.h
+	"serializable.h"
+
+1698367447 source:c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\src\header.cpp
+	"header.h"
+
+1570044850 c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\include\header.h
+	"serializable.h"
+
+1570044844 c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\include\serializable.h
+	<string>
+
+1699399428 source:c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\src\intserial.cpp
+	"intserial.h"
+
+1570069193 c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\include\intserial.h
+	"serializable.h"
+
+1699568040 source:c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\main.cpp
+	<iostream>
+	<clocale>
+	"header.h"
+	"record.h"
+	"typedfile.h"
+	"intserial.h"
+
+1699399788 c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\include\record.h
+	<string>
+	"serializable.h"
+	<type_traits>
+
+1699573132 c:\users\bya\desktop\computação\2023.2\tp\typedfile-clean\include\typedfile.h
+	<fstream>
+	<type_traits>
+	"header.h"
+	"record.h"
+

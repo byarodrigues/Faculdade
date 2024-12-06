@@ -1,0 +1,68 @@
+1: Se a chave k está em uma página folha x, remova k de x.
+
+2: Se a chave k está em uma página interna x, faça:
+
+a) Se o filho y que precede k na página x tem, no mínimo, t chaves, então encontre o 
+predecessor k' de k na sub-árvore enraizada em y (k' é o maior dos menores). Recursivamente, 
+remova k' e troque k por k' em x (podemos encontrar e remover k' em uma única passagem pela 
+árvore).
+
+b) Se y tem menos que t chaves, então examine, de forma simétrica, o filho z que segue k na 
+página x. Se z tem pelo menos t chaves, então encontre o sucessor k' de k na sub-árvore 
+enraizada em z (k' é o menor dos maiores). Recursivamente, remova k' e troque k por k' em x 
+(podemos encontrar e remover k' em uma única passagem pela árvore).
+
+c) Caso contrário, se ambos y e z possuírem apenas t - 1 chaves, faça a fusão de k e todo o 
+conteúdo de z em y, de tal forma que x perde a chave k e o ponteiro para z, e y agora passa a 
+conter 2t - 1 chaves. Então desaloque z e recursivamente remova k de y.
+
+3: Se a chave k não está presente na página interna x, determine a raiz x.ci da sub-árvore 
+apropriada que deve conter k, se k existir na árvore. Se x.ci tem apenas t - 1 chaves, execute 
+o passo 3a ou 3b conforme necessário para garantir que vamos descer para uma página contendo, 
+no mínimo, t chaves. Então finalize fazendo a recursão no filho apropriado de x.
+//descobrir em qual sub arvore está a chave.
+//se tem t chaves 
+
+a) Se x.ci tem apenas t - 1 chaves mas tem um irmão imediato com, no mínimo, t chaves, dê a 
+x.ci uma chave extra trocando uma chave de x para x.ci, e movendo a chave do irmão de x.ci 
+imediatamente à esquerda ou à direita para x, e movendo o ponteiro apropriado dos descendentes 
+desse irmão x.ci para x.ci. Inicie pelo irmão da esquerda, caso ele não tenha como emprestar 
+essa chave, analise o irmão da direita.
+
+b) Se x.ci e ambos os irmãos imediatos possuem t - 1 chaves, faça a fusão de x.ci com um dos 
+irmãos (preferencialmente o da esquerda), movendo uma chave de x para o nó em que as chaves 
+serão agrupadas, para se tornar a mediana daquele nó, e todos os ponteiros dos descendentes, 
+se houver.
+
+Exercícios:
+Remova as seguintes chaves, nesta ordem: "C", "P", "V", "J", "O", "Y", "R", "X", "T".
+
+          [E|L|P|T|X]
+[A|C] [J|K] [N|O] [Q|R|S] [U|V] [Y|Z]
+
+           [L|P|T|X]
+[A|E|J|K] [N|O] [Q|R|S] [U|V] [Y|Z]
+
+           [L|Q|T|X]
+[A|E|J|K] [N|O] [R|S] [U|V] [Y|Z]
+
+            [L|Q|X]
+[A|E|J|K] [N|O] [R|S|T|U] [Y|Z]
+
+          [L|Q|X]
+[A|E|K] [N|O] [R|S|T|U] [Y|Z]
+
+        [K|Q|X]
+[A|E] [L|N] [R|S|T|U] [Y|Z]
+
+        [K|Q|U]
+[A|E] [L|N] [R|S|T] [X|Z]
+
+        [K|Q|U]
+[A|E] [L|N] [S|T] [X|Z]
+
+      [K|Q]
+[A|E] [L|N] [S|T|U|Z]
+
+      [K|Q]
+[A|E] [L|N] [S|U|Z]

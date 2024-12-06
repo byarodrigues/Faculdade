@@ -1,0 +1,79 @@
+Aproveitei o grafo que usaram nesse exemplo pra resolver utilizando o Algoritmo de Kruskal, por ser um algoritmo guloso ele busca sempre o menor valor. Por conta disso o meu resultado final deu diferente. Acho bacana para comparar os dois exemplos.
+O passo a passo que utilizei para resolver foi o seguinte:
+1.	Para cada vértice desse grafo criamos um conjunto desconexo.
+2.	Ordenamos cada aresta em uma ordem crescente e com o peso w.
+3.	Para cada aresta de u para v, do menor para o maior temos que fazer:
+	•	Confere se já está no mesmo conjunto que esse outro vértice.
+	•	Caso não esteja, devemos ligar esses vértices e acrescentar o valor da aresta no resultado final.
+4.	No final de tudo temos o resultado total com o menor caminho possível.
+
+foto de  a a m:
+
+
+
+
+
+resumo prim: 
+MST-PRIM(G, w, r) // recebe um grafo, a matriz com os pesos e o vértice de origem
+ 1   for each u ϵ G.V // para todo os vertices
+ 2      u.key = ∞ // diz q a chave é infinita
+ 3      u.π = NIL // o predecessor é nulo
+ 4   r.key = 0 // o custo para chegar na raiz inicial
+ 5   Q = G.V // coloca os vérices na fila de prioridade
+ 6   while Q ≠ Ø // enquanto a fina não está vazia
+ 7      u = EXTRACT-MIN(Q) // extrai o vertice da fila o vertice que tem a menor chave
+ 8      for each v ϵ G.Adj[u] // olha os vizinhos 
+ 9         if v ϵ Q and w(u, v) < v.key //se o vertice ainda estiver na fila e o peso da aresta de u pra v for menor que a chave pra v
+10            v.π = u // fala q o predecessor é u e o peso da ?chave?
+11            v.key = w(u, v) // 
+
+
+
+Abaixo, destaco os principais pontos de cada código:
+
+KRUSKAL:
+1. Inicializa uma lista vazia (matriz de adjacência).
+2. Para cada vértice, cria conjuntos desconectados.
+3. Ordena as arestas em ordem não decrescente pelo peso.
+4. Itera sobre as arestas, do menor ao maior peso:
+   5. Se os vértices não pertencem ao mesmo conjunto:
+      6. Adiciona a aresta à lista da árvore mínima.
+      7. Une os conjuntos dos vértices.
+8. Retorna a lista da árvore mínima.
+
+PRIM:
+1. Inicializa chaves e predecessores para todos os vértices.
+2. Define a chave do vértice de origem como 0.
+3. Coloca todos os vértices em uma fila de prioridade.
+4. Enquanto a fila não está vazia:
+   5. Extrai o vértice com a menor chave.
+   6. Para cada vizinho:
+      7. Se ainda está na fila e a aresta tem peso menor que a chave:
+         8. Atualiza o predecessor e a chave.
+9. Retorna os predecessores, representando a árvore mínima.
+
+Diferenças em suas abordagens:
+
+KRUSKAL: Começa ordenando todas as arestas em ordem não decrescente por peso e, em seguida, itera sobre elas selecionando as arestas mais leves que não formam ciclos.
+PRIM: Começa de um vértice inicial e cresce a árvore selecionando a aresta mais leve conectada aos vértices já incluídos na árvore.
+
+KRUSKAL: Usa uma abordagem de conjuntos disjuntos (disjoint sets) para verificar a conectividade entre vértices e evitar ciclos.
+PRIM: Usa uma fila de prioridade (geralmente implementada como uma heap binária) para manter os vértices ordenados pelo custo da aresta mais leve que os conecta à árvore.
+
+KRUSKAL: Tem uma complexidade temporal geralmente mais eficiente em grafos densos, sendo proporcional a \(O(E \log V)\), onde \(E\) é o número de arestas e \(V\) é o número de vértices.
+PRIM: Pode ter uma complexidade temporal melhor em grafos esparsos, sendo proporcional a \(O(E + V \log V)\), onde \(E\) é o número de arestas e \(V\) é o número de vértices.
+
+KRUSKAL: Pode ser aplicado a grafos direcionados, pois as arestas são tratadas independentemente da direção.
+PRIM: Geralmente é mais adequado para grafos não direcionados, pois depende da noção de vértices vizinhos.
+
+KRUSKAL: Começa com conjuntos disjuntos para cada vértice.
+PRIM: Inicia as chaves e predecessores para todos os vértices, definindo a chave do vértice de origem como zero.
+
+KRUSKAL: Seleciona arestas com base nos conjuntos a que os vértices pertencem.
+PRIM: Seleciona arestas com base nas chaves dos vértices vizinhos.
+
+KRUSKAL: Pode ser aplicado mesmo em grafos não conectados.
+PRIM: Exige que o grafo seja conectado para encontrar uma árvore geradora mínima.
+
+Essas diferenças refletem as diferentes estratégias e abordagens que esses algoritmos utilizam para atingir o mesmo objetivo. A escolha entre eles muitas vezes depende das características específicas do grafo em questão e dos requisitos de desempenho.
+

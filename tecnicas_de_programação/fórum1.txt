@@ -1,0 +1,79 @@
+Segue abaixo um resumo bem geral sobre Orientação a Objetos em C++ que fiz ussando as aulas de TP como referencia:
+
+-Construtores são métodos especiais que são chamados quando um objeto é criado. Eles são usados para inicializar os atributos do objeto.
+-Métodos acessores são métodos que permitem acessar ou modificar os atributos de um objeto.
+-Atributos são as características de um objeto, como seu tamanho, cor ou peso.
+-Objeto é uma instância específica de uma classe.
+-Sobrecarga de operadores é o processo de redefinir o comportamento de operadores existentes para outros tipos de dados nativos da linguagem para que possam funcionar em outras classes.
+-A herança pode ser pública, protegida ou privada.
+-Uma classe abstrata deve ter pelo menos um método abstrato.
+-Um operador sobrecarregado deve ter a mesma quantidade de parâmetros que o operador original.
+-Métodos são as ações que um objeto pode realizar, como andar, falar ou comer.
+-#ifndef verifica se um arquivo já existe no programa. Se o arquivo não existir, o #define define o arquivo.
+-"virtual" garante que, no caso de herança, os destrutores sejam chamados na ordem correta.
+-O usuário só tem acesso aos métodos, não aos atributos, que estão encapsulados.
+-& é um operador de endereço de memória.
+-Os métodos que possuem implementação (vazia ou não) terminam com o fechamento das chaves, sem ponto-e-vírgula no final.
+-Classe filha não chama destrutor da classe base.
+-Uma classe abstrata é aquela que não pode instanciar um objeto, mas pode ser usada como ponteiro para qualquer classe derivada.
+-Construtores e destrutores não possuem retorno na declaração, nem na implementação.
+-Os métodos que possuem retorno devem ter o tipo declarado antes do nome da classe.
+-Quando a herança é pública, todos os métodos e atributos públicos da classe base permanecem públicos na classe filha, os protegidos podem ser acessados diretamente pela classe filha, e os privados só podem ser acessados por meio de acessores.
+
+
+
+Tendo esses comentários como base e pesquisando mais sobre o assunto achei um material  bem didático sobre polimorfismo em POO e C++. 
+Consegui entender que em C++ polimorfismo se dá através da conversão dos ponteiros (ou referências) e usam objetos em hierarquia de classes.
+class A {
+publix: void f ( )
+};
+class B: public A {
+public: void g ( );
+};
+
+Como B é derivado de A, todos os membros disponíveis em A
+também estarão em B;
+B é um super-conjunto de A: todas as operações que podem
+ser feitas com objetos de A também o podem através de
+objetos de B;
+Um objeto da classe B também é um objeto da classe A: isso
+significa a possibilidade de se converter um objeto de B para A
+
+Tive como base o site "https://webserver2.tecgraf.puc-rio.br/ftp_pub/users/lfm/CIV2802-111-aula06.pdf"
+
+
+
+
+Aproveitando o comentário sobre polimorfismo, resolvi compartilhar um material que achei bem didático sobre o assunto.
+Em C++, o polimorfismo é uma técnica que permite que objetos de classes derivadas sejam tratados como objetos da classe base. Isso é possível através da conversão de ponteiros (ou referências) e da utilização de objetos em hierarquia de classes. Para entender melhor, vamos considerar o seguinte exemplo:
+
+```c++
+class A {
+public:
+  void f() {
+    std::cout << "Classe A" << std::endl;
+  }
+};
+
+class B : public A {
+public:
+  void g() {
+    std::cout << "Classe B" << std::endl;
+  }
+};
+
+int main() {
+  A* a = new B();
+  a->f(); // Imprime "Classe A"
+  a->g(); // Imprime "Classe B"
+
+  delete a;
+  return 0;
+}
+```
+
+No código acima, criamos um ponteiro da classe `A` e o atribuimos a um objeto da classe `B`. Em seguida, chamamos o método `f()` no ponteiro. Como `f()` é um método da classe `A`, ele é chamado da classe `A`. Em seguida, chamamos o método `g()` no ponteiro. Como `g()` é um método da classe `B`, ele é chamado da classe `B`.
+Nesse exemplo, podemos ver que um objeto da classe `B` pode ser tratado como um objeto da classe `A`. Isso ocorre porque `B` é uma classe derivada de `A`. Como `B` é derivada de `A`, todos os membros disponíveis em `A` também estarão em `B`.
+Em outras palavras, `B` é um superconjunto de `A`. Todas as operações que podem ser feitas com objetos de `A` também podem ser feitas com objetos de `B`.
+Espero que esse material seja útil para vocês. Se tiverem alguma dúvida, não hesitem em perguntar.
+

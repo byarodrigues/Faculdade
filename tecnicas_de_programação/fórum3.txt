@@ -1,0 +1,24 @@
+Além desse artigo, recomendo ver o vídeo do canal "Programa Aí" do Rodolfo Carvalho.
+No vídeo, ele explica o conceito de serialização e apresenta brevemente os formatos de serialização CSV e JSON.
+O vídeo é bem didático e explica os conceitos de forma clara e objetiva. Mesmo que não veremos esses formatos na disciplina, acredito que é importante conhecê-los.
+
+Aqui estão alguns pontos importantes do vídeo:
+Serialização: processo de converter um objeto de dados em uma representação de texto ou binário que possa ser armazenado ou transmitido.
+CSV: formato de texto que separa os dados por vírgulas. É um formato simples e fácil de ler, mas pode ser difícil de manipular.
+JSON: formato de dados baseado na sintaxe do objeto JavaScript. É um formato mais complexo, mas é mais fácil de manipular e é amplamente utilizado.
+O vídeo está disponível no link a seguir:
+
+https://youtu.be/ch9KqVvEfJU
+
+
+Comparação entre serialização de objetos e arquivo de registros
+
+A serialização de objetos e o arquivo de registros são duas técnicas de persistência de dados que têm suas próprias vantagens e desvantagens.
+
+Serialização de objetos
+A serialização de objetos é um processo que converte o estado de um objeto em uma sequência de bytes. Esta sequência de bytes pode ser armazenada em um arquivo ou transmitida pela rede. Para recuperar o objeto, a sequência de bytes pode ser desserializada para recriar o objeto original.
+A serialização de objetos é uma técnica versátil que pode ser usada para persistir qualquer tipo de objeto. No entanto, ela pode ser lenta e exigir um grande espaço de armazenamento, pois precisa incluir todos os dados do objeto.
+
+Arquivo de registros
+O arquivo de registros é um arquivo que armazena eventos que ocorreram em um sistema. Cada evento é armazenado como uma linha no arquivo, contendo uma data e hora, um tipo de evento e os dados do evento.
+Os arquivos de registros são uma boa opção para aplicações que precisam registrar eventos em tempo real. Eles são eficientes em termos de espaço de armazenamento e podem ser usados para reconstruir o estado de um sistema em um determinado momento.

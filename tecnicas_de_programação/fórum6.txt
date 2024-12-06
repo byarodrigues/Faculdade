@@ -1,0 +1,56 @@
+O algoritmo de Bellman-Ford é usado para encontrar o menor caminho em 
+um grafo com arestas com pesos negativos. Para ajudar a resolver os 
+exemplos práticos fiz um passo a passo da resolução dele:
+Inicialize as distâncias: Defina uma distância inicial para cada 
+vértice do grafo. Normalmente, a distância inicial para o vértice de 
+origem é 0 e a distância inicial para todos os outros vértices é 
+infinita.
+Relaxe as arestas: Para cada aresta do grafo, verifique se é possível 
+atualizar a distância de um vértice de destino relaxando a aresta. 
+Isso é feito comparando a distância do vértice de origem mais o peso 
+da aresta com a distância atual do vértice de destino. Se a distância 
+do vértice de origem mais o peso da aresta for menor que a distância 
+atual do vértice de destino, atualize a distância do vértice de 
+destino.
+Repita o processo de relaxamento de arestas V-1 vezes: O número de 
+vezes que o processo de relaxamento de arestas deve ser repetido é 
+V-1, onde V é o número de vértices no grafo. Isso garante que todas 
+as arestas do grafo sejam relaxadas pelo menos uma vez.
+Verifique ciclos negativos: Depois de relaxar as arestas V-1 vezes, 
+verifique se há algum vértice cuja distância foi atualizada. Se a 
+distância de algum vértice for atualizada após as V-1 iterações, 
+significa que há um ciclo negativo no grafo, o que faz com que o 
+algoritmo de Bellman-Ford não funcione corretamente.
+Retorne as distâncias: Após o processo de relaxamento de arestas 
+V-1 vezes, as distâncias finais dos vértices serão retornadas. 
+Essas distâncias representam o menor caminho entre o vértice de 
+origem e todos os outros vértices no grafo.
+
+
+
+Tendo o livro como base fiz também o de Dijkstra para facilitar:
+1. Inicialize as distâncias: Defina uma distância inicial para cada 
+vértice do grafo. Normalmente, a distância inicial para o vértice de 
+origem é 0 e a distância inicial para todos os outros vértices é 
+infinita.
+2. Crie uma fila de prioridade: Crie uma fila de prioridade com todos 
+os vértices do grafo e ordene-a de acordo com as distâncias atualmente 
+conhecidas de cada vértice. A fila de prioridade será usada para 
+determinar qual vértice será processado a seguir.
+3. Extraia o vértice com a menor distância: Remova o vértice da fila 
+de prioridade com a menor distância conhecida. Este vértice será o 
+vértice atualmente sendo processado.
+4. Atualize as distâncias dos vértices adjacentes: Para cada vértice 
+adjacente ao vértice atualmente sendo processado, verifique se é 
+possível atualizar sua distância. Isso é feito comparando a distância 
+atual mais o peso da aresta com a distância conhecida do vértice 
+adjacente. Se a distância atual mais o peso da aresta for menor que 
+a distância conhecida do vértice adjacente, atualize a distância do 
+vértice adjacente e adicione-o de volta à fila de prioridade.
+5. Repita os passos 3 e 4 até que todos os vértices tenham sido 
+processados: Repita os passos 3 e 4 até que todos os vértices tenham 
+sido processados e não hajam mais vértices na fila de prioridade.
+6. Retorne as distâncias: Após o processamento de todos os vértices, 
+as distâncias finais dos vértices serão retornadas. Essas distâncias 
+representam o menor caminho entre o vértice de origem e todos os 
+outros vértices no grafo.

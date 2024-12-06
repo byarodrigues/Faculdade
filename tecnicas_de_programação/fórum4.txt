@@ -1,0 +1,27 @@
+Árvores B são árvores de pesquisa balanceadas projetadas para funcionar bem em dispositivos de armazenamento secundário. Elas são semelhantes às árvores rubro-negras, mas com melhor desempenho com operações de entrada e saída de disco.
+
+Características de uma árvore B:
+
+Grau mínimo: O grau mínimo de uma árvore B é t. Isso significa que cada nó, exceto a raiz, deve ter pelo menos t filhos.
+Número mínimo de chaves: O número mínimo de chaves em um nó de uma árvore B é t-1. Isso significa que a raiz pode ter apenas 1 chave, e os outros nós devem ter pelo menos t chaves.
+Número máximo de chaves: O número máximo de chaves em um nó de uma árvore B é 2t-1. Isso significa que a raiz pode ter no máximo 2t-1 chaves, e os outros nós devem ter no máximo 2t-1 chaves.
+Número mínimo de descendentes: O número mínimo de descendentes de um nó de uma árvore B é t. Isso significa que a raiz pode ter apenas 1 descendente, e os outros nós devem ter pelo menos t descendentes.
+Número máximo de descendentes: O número máximo de descendentes de um nó de uma árvore B é 2t. Isso significa que a raiz pode ter no máximo 2t descendentes, e os outros nós devem ter no máximo 2t descendentes.
+Crescimento: Uma árvore B sempre cresce pela divisão da raiz. Isso ocorre quando uma página da árvore atinge o seu limite de chaves.
+Páginas: Uma página em uma árvore B é uma estrutura de dados que armazena um conjunto de chaves e seus respectivos descendentes.
+Folhas: Em uma árvore B, todas as folhas estão no mesmo nível. Isso significa que todas as folhas possuem a mesma altura.
+Raiz: A raiz é a única página em uma árvore B que pode ter apenas 1 chave.
+
+Variantes de árvores B:
+Árvore B:* É uma variante da árvore B que tenta ser mais compacta, mantendo a capacidade das páginas em torno de 66% (2/3).
+Árvore B+: É outra variante da árvore B que não tenta resolver o problema de ocupação. Em vez disso, ela armazena apenas as chaves nos nós internos, e os dados completos dos objetos estão armazenados nas folhas.
+
+Vantagens de árvores B:
+Eficiência: As árvores B são altamente eficientes em termos de tempo e espaço.
+Escalabilidade: As árvores B podem ser facilmente escalonadas para acomodar grandes quantidades de dados.
+Resistência a falhas: As árvores B são tolerantes a falhas, pois podem ser recuperadas de um estado de falha.
+
+Aplicações de árvores B:
+Bancos de dados: As árvores B são usadas em bancos de dados para indexar dados.
+Sistemas de arquivos: As árvores B são usadas em sistemas de arquivos para armazenar dados.
+Sistemas de buscas: As árvores B são usadas em sistemas de buscas para indexar dados.
