@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas</title>
+</head>
+<body>
+    <input type="text" id="txtFruta" placeholder="Digite uma fruta" />
+    <button id="btnIncluirFruta">Incluir Fruta</button>
+    <button id="btnMostrarFrutas">Mostrar Frutas</button>
+    <ul></ul>
+
+    <script>
+        let frutos = [];
+
+        document.getElementById("btnIncluirFruta").addEventListener('click', () => {
+            let inputFruta = document.getElementById("txtFruta").value;
+            if (inputFruta.trim() !== "") {
+                frutos.push(inputFruta);
+                document.getElementById("txtFruta").value = "";
+            }
+        });
+
+        document.getElementById("btnMostrarFrutas").addEventListener('click', () => {
+            let ul = document.querySelector("ul");
+            ul.innerHTML = "";
+
+            frutos.forEach((fruto, index) => {
+                let li = document.createElement("li");
+                li.innerHTML = `Em ${index + 1} temos: ${fruto}`;
+                ul.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>

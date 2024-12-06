@@ -1,0 +1,29 @@
+/* asterisco aplica o estilo a tudo na pagina */
+* {
+    background: rgb(224, 200, 200);
+    color: rgb(20, 23, 230);
+    font-size: 40px;
+} 
+
+/* seletor de classe: todos os elementos que 
+tiverem esse elemento em class serão influenciados */
+.cor{
+    background: green;
+}
+
+/* seletor de id: todos os elementos que 
+tiverem esse elemento em id serão influenciados */
+/* ids idealmentedevem ser unicos, do contrario
+melhor criar uma classe */
+#paragrafo1{
+    background: blue;
+    color: white;
+}
+
+/* experimente trocar o li por p.
+Perceba que todos os p ficam com esse estilo com 
+excecao daquele definido com outro pelo id especifico */
+li {
+    background: yellow;
+    color: black;
+} 

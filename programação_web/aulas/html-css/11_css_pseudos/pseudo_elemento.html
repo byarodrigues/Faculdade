@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elemento</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        /* pseudo elementos */
+        h1 {
+            margin: 50px;
+        }
+
+        h1::before {
+            content: "“";
+            font-size: 100px;
+            color: rgb(211, 112, 41);
+        }
+
+        h1::after {
+            content: "”";
+            font-size: 30px;
+            color: rgb(211, 112, 41);
+        }
+
+        /*repare que esse codigo gera um js no inspector*/
+        h1::first-line {
+            color: rgb(211, 112, 41);
+            font-size: 100px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <h1>
+            Todos esses que aí estão
+            atravancando meu caminho,
+            eles passarão…
+            Eu passarinho!
+        </h1>
+        <br>
+        <p>Mário Quintana<p>
+    </div>
+
+</body>
+
+</html>

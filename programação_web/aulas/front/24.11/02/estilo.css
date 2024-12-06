@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'teste';
+    src: url('fonte.TTF') format('truetype'),
+}
+
+@keyframes animacao-botao {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+.titulo{
+    color: white;
+    font-size: 50px;
+    background-color: green;
+}
+.texto{
+    color: black;
+    font-size: 30px;
+}
+.senhor{
+    color: rgb(255, 251, 0);
+    font-size: 100px;
+    background-color: black;
+    font-family: 'teste';
+    animation: animacao-botao 1s infinite;
+}
+.meu-botao {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: animacao-botao 1s infinite;
+}
+
+.meu-botao:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.meu-botao:active {
+    background-color: #1f618d;
+}
