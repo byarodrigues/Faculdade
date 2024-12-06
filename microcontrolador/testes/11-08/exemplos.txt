@@ -1,0 +1,28 @@
+ex1
+    
+    TMROL: LSB;//  8 BITS ¬
+    TMYOH: MSB;  //        | 16 BITS
+    TOCON   ;
+    0B10000110;
+    49911
+    TEMP. EST. = CICLO MAQ. * PRESCALER *(256OU65536 - VALOR CONT)
+    1000000(Ms) = 0,5 (Ms) * 128*(65536 - x)
+    1000000 = 64*65536 - 64x
+    1000000 - 4194304 = - 64x
+    -3194304 = -64x
+    x = 49911 = c2f7
+    
+    
+    
+ex2   510
+    
+    TEMP. EST. = CICLO MAQ. * PRESCALER *(256OU65536 - VALOR CONT)
+    x          =0,5*4(256-0)
+    x = 512(Ms)
+    
+    
+ex3 8,4mili
+
+    TEMP. EST. = CICLO MAQ. * PRESCALER *(256OU65536 - VALOR CONT)
+    x = 0,5*256(65536-0)
+    x = 8388608x10-6s
