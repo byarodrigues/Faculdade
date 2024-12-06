@@ -1,0 +1,5 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F47K42 -DL -O11111114 -fo8 -N"C:\Users\bya\Desktop\computação\2022.2\microcontroladores\testes\28-07\ex1\b.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" -SP"C:\Users\bya\Desktop\computação\2022.2\microcontroladores\testes\28-07\ex1\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CString.mcl" "__Lib_Conversions.mcl" "__Lib_Button.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
+hint: 0	1139	Available RAM: 8170 [bytes], Available ROM: 131072 [bytes]	 
+diagnostics: 0	127	All files Compiled in 0 ms	 
+error: 0	357	main function is not defined	main function is not defined
+error: 0	102	Finished (with errors): 28 jul 2022, 13:49:23	b.mcppi
